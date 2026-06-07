@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    width: 100%;
+     height: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 100;
+    word-spacing: 5px;
+    top: 0px;
+}
+
+
+
+.navdiv {
+    /* text-align: start; */
+    padding-left: 100px;
+    width: auto;
+    height: 0%;
+}
+
+.headdiv {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+      /* background: rgb(176, 126, 2); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    /* padding: 10px; */
+    z-index: 100;
+    top: 0px;
+    word-spacing: 5px;
+}
+
+.leftdiv{
+    background-color: rgb(176, 126, 2);
+    padding: 20px 5px;
+}
+
+
+.navdiv {
+    padding-left: 100px;
+    width: auto;
+    height: 0%;
+}
+
+.headdiv {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 100;
+    top: 0px;
+    word-spacing: 5px;
+}
+
+.leftdiv{
+    background-color: rgb(176, 126, 2);
+    padding: 20px 5px;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+    /* background-color: aqua; */
+    text-align: center;
+    border: 0.5px solid grey;
+}
+
+.hamburger-icon {
+    width: 30px;
+    height: 30px;
+    color: #0a0a0a;
+    cursor: pointer;
+    display: none;
+        font-weight: bolder;
+
+}
+
+.dropdown-menu {
+    position: absolute;
+      top: 0;
+    right: 30%;
+    background-color:  white;
+    padding: 10px;
+    display: none;
+    border-radius: 5px;
+}
+
+.dropdown-menu:hover {
+    background-color: white;
+    /* color: white; */
+}
+
+.hamburger-menu:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #0e0e0e;
+}
+
+.dropdown-menu li a:hover {
+         color: rgb(143, 142, 142);
+    transition: color 0.5s ease-in-out;
+}
+
+.navigation {
+    display: block;
+}
+
+.hamburger {
+    display: none;
+    width: 20px;
+    height: 20px;
+    font-size: larger;
+    font-weight: 50px;
+}
+
+/* .hamburger-icon:hover {
+    color: white;
+} */
+
+@media (max-width: 600px) {
+    .navigation {
+        display: none;
+    }
+    .hamburger-icon {
+        display: block;
+    }
+}
+
+nav {
+    padding: 10px 10px;
+}
+
+nav a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+     padding-left: 40px;
+    font-weight: 1000;
+    font-size: x-large;
+}
+
+nav a:hover {
+     color: rgb(180, 180, 180);
+    font-weight: bolder;  
+    text-decoration: underline;
+      transition: color 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.bcolor {
+        display: grid;
+    grid-template-columns: auto;
+       background: linear-gradient(rgba(0, 0, 0, 0.1), 
+            rgba(0, 0, 0, 0.1)),
+        url(../IMAGES/img/page-header.jpg) center/cover no-repeat;
+        text-align: center;
+        padding: 150px;
+        font-size: 30px;
+        transition: filter 0.4s ease-in-out;
+        height: 0;
+}
+
+.bcolor:hover {
+    filter: brightness(80%);
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    gap: 30px;
+    padding-left: 10px;
+}
+
+.haircut {
+    background:rgb(250, 250, 250);
+    width: 85%;
+}
+
+.makeup {
+    background:rgb(250, 250, 250);
+    width: 85%;
+}
+
+.manicure {
+    background:rgb(250, 250, 250);
+    width: 85%;
+}
+
+.massage {
+    background:rgb(250, 250, 250);
+    width: 85%;
+}
+
+.pedicure {
+    background:rgb(250, 250, 250);
+    width: 85%;
+}
+
+.skin-care {
+    background:rgb(250, 250, 250);
+    width: 85%;
+}
+
+.makeup:hover {
+   background:  rgb(209, 209, 209); 
+   cursor: pointer;
+   border-radius: 5px;
+   transition: background-color 1s ease-out, transform 1s ease-out;
+   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2);
+   width: 90%;
+   text-align: center;
+}
+.haircut:hover { 
+    background:  rgb(209, 209, 209); 
+    cursor: pointer;
+   border-radius: 5px;
+   transition: background-color 1s ease-out, transform 1s ease-out;
+   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2);
+   width: 90%;
+}
+.manicure:hover {
+    background:  rgb(209, 209, 209); 
+    cursor: pointer;
+   border-radius: 5px;
+   transition: background-color 1s ease-out, transform 1s ease-out;
+   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2);
+   width: 90%;
+}
+.massage:hover {
+    background:  rgb(209, 209, 209);
+    cursor: pointer;
+   border-radius: 5px;
+   transition: background-color 0.5s ease-out, transform 0.5s ease-out;
+   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2);
+   width: 90%;
+}
+.pedicure:hover {
+    background:  rgb(209, 209, 209);
+    cursor: pointer;
+   border-radius: 5px;
+   transition: background-color 0.5s ease-out, transform 0.5s ease-out;
+   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2);
+   width: 90%;
+}
+.skin-care:hover {
+    background:  rgb(209, 209, 209);
+    cursor: pointer;
+   border-radius: 5px;
+   transition: background-color 0.5s ease-out, transform 0.5s ease-out;
+   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2);
+   width: 90%;
+}
+
+.explore {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.bcolor {
+        display: grid;
+    grid-template-columns: auto;
+       background: linear-gradient(rgba(0, 0, 0, 0.1), 
+            rgba(0, 0, 0, 0.1)),
+        url(../IMAGES/img/page-header.jpg) center/cover no-repeat;
+        text-align: center;
+        padding: 150px;
+        font-size: 30px;
+}
+
+.service {
+     color:  rgb(176, 126, 2);
+    font-weight: lighter;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.Testimonial {
+    text-align: center;
+}
+
+.main-test {
+       color:  rgb(176, 126, 2);
+    font-weight: lighter;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.Clients {
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.test-body {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    width: 100%;
+    gap: 10px;
+
+}
+
+.testimoniala {
+    border-radius: 5px;
+     background:rgb(253, 250, 250);
+     width: 85%;
+    /* padding: 40px; */
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.testimoniala:hover {
+        background: rgb(219, 216, 216);
+    transition: background-color 0.5s ease-out, transform 0.5s ease-out;
+    width: 90%;
+     box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2);
+}
+
+.Client1 {
+    width: 55%;
+}
+
+.Client2 {
+    width: 40%;
+}
+
+.Client3 {
+    width: 50%;
+}
+
+.pricingcont {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+}
+
+.pricingleft {
+     background:  rgb(5, 5, 5);
+    /* padding: 250px 50px; */
+    width: 100%;
+    padding-left: 13px;
+    padding-top: 30px;
+}
+
+.pricingright {
+     background:  rgb(176, 126, 2);
+     /* padding: 0px; */
+}
+
+.innercont {
+    background-color:  rgb(44, 41, 33);
+    text-align: center;
+    padding: 10px 10px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.innercont:hover {
+    background-color: rgb(34, 31, 24);
+        padding: 12px 12px;
+
+}
+
+.pricetext {
+    font-weight: bold;
+    color: grey;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.midtext {
+    font-size: 70px;
+    color: grey;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.whiteprice {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.beaprice {
+    color: rgb(176, 126, 2);
+    margin-bottom: 20px;
+}
+
+.pricing {
+    color: rgb(176, 126, 2);
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+}
+
+.btnprice {
+    background-color: rgb(176, 126, 2);
+    border: none;
+    margin: 20px 0;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+
+.btnprice:hover {
+    background-color: rgb(116, 84, 2);
+        padding: 11px 6px;
+}
+
+.rightside {
+    border: 1px solid black;
+    margin-top: 25px;
+    color: #616161;
+    padding: 20px 5px;
+    background: rgb(8, 8, 8);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.rightside:hover {
+    padding: 25px 9px;
+}
+
+.whitetext {
+    color: rgb(173, 172, 172);
+}
+
+.savebig {
+    color: rgb(173, 172, 172);
+    margin-top: 10px;
+}
+
+
+.lastcont {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    height: 100%;
+    background: #252524;
+    margin-bottom: 0px;
+    z-index: 99;
+    margin-top: 5px;
+}
+
+.lasth1 {
+    color: rgb(176, 126, 2);
+    margin:30px 0;
+}
+.lastdiv1 {
+    border-right: 0.1px solid #9d9898;
+    padding-top: 20px;
+    padding-left: 20px;
+    /* width: 50%; */
+}
+
+.lastdiv2 {
+    border-left: 0.1px solid #9d9898;
+    padding-top: 20px;
+    padding-left: 20px;
+    /* width: 50%; */
+}
+
+.lastp1 {
+    color: #9d9898;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    word-spacing: 5px;
+}
+
+.lastp2 {
+    color: #9d9898;
+}
+
+ul {
+    margin-top: 30px;
+    color: #9d9898;
+    /* list-style: none; */
+}
+
+.contact {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+.sociamedia {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 20%;
+    margin-top: 50px;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.smapp {
+    border: 1px solid black;
+    background: rgb(176, 126, 2);
+    text-align: center;
+    width: 30px;
+    height: 25px;
+    padding-top: 4px;
+    font-weight: bold;
+}
+
+.smapp:hover {
+    width: 32px;
+    height: 27px;
+    background: rgb(110, 82, 11);
+}
+
+.rightcont {
+    display: grid;
+    grid-template-columns: auto auto;
+    overflow: auto;
+
+}
+
+.Newsletter {
+    margin-left: 20px;
+    margin-top: 0px;
+    /* text-align: center; */
+}
+
+input {
+    background: rgb(90, 85, 85);
+    /* text-align: center; */
+    margin-right: 25px;
+}
+
+::placeholder {
+    color: #c1b7b7;
+    padding: 5px;
+}
+
+.get-subscribe {
+    background: rgb(176, 126, 2);
+    margin-bottom: 10px;
+    text-align: center;
+    margin-right: 10px;
+    height: 150px;
+    width: 90px;
+}
+
+.get-subscribe:hover {
+    background: rgb(110, 82, 11);
+    width: 95px;
+    height: 155px;
+}
+
+
+footer {
+    background-color: #312d2d;
+    /* margin-top: 20px; */
+    padding: 20px;
+    font-size: x-large;
+    text-align: center;
+    word-spacing: 3px;    
+    border-top: 1px solid #9d9898;
+    color: #9d9898;
+}
