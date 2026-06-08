@@ -156,7 +156,7 @@ nav a:hover {
             rgba(0, 0, 0, 0.1)),
         url(../IMAGES/img/page-header.jpg) center/cover no-repeat;
         text-align: center;
-        padding: 90px;
+        padding: 100px;
         font-size: 30px;        
         transition: filter 0.4s ease-in-out;
 }
