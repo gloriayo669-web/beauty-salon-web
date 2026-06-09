@@ -176,13 +176,16 @@ nav a:hover {
         url(page-header.jpg) center/cover no-repeat;
         text-align: center;
         padding: 150px;
-        font-size: 30px;        
+        font-size: 30px;
         transition: filter 0.4s ease-in-out;
+        height: 0;
 }
 
 .bcolor:hover {
     filter: brightness(80%);
 }
+
+
 .container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -282,7 +285,7 @@ nav a:hover {
     grid-template-columns: auto;
        background: linear-gradient(rgba(0, 0, 0, 0.1), 
             rgba(0, 0, 0, 0.1)),
-        url(../IMAGES/img/page-header.jpg) center/cover no-repeat;
+        url(page-header.jpg) center/cover no-repeat;
         text-align: center;
         padding: 150px;
         font-size: 30px;
@@ -372,7 +375,7 @@ nav a:hover {
 }
 
 .innercont {
-    background-color:  rgb(44, 41, 33);
+    background-color:  rgb(176, 126, 2);
     text-align: center;
     padding: 10px 10px;
     width: 50%;
@@ -380,21 +383,19 @@ nav a:hover {
 }
 
 .innercont:hover {
-    background-color: rgb(34, 31, 24);
+    background-color: rgb(116, 84, 2);
         padding: 12px 12px;
 
 }
 
 .pricetext {
     font-weight: bold;
-    color: grey;
     font-size: 40px;
     margin-bottom: 15px;
 }
 
 .midtext {
     font-size: 70px;
-    color: grey;
     font-weight: bolder;
     margin-bottom: 15px;
 }
@@ -576,12 +577,10 @@ input {
 
 
 footer {
-    background-color: #312d2d;
+    background:  rgb(176, 126, 2);
     /* margin-top: 20px; */
     padding: 20px;
     font-size: x-large;
     text-align: center;
-    word-spacing: 3px;    
-    border-top: 1px solid #9d9898;
-    color: #9d9898;
+    word-spacing: 3px;
 }
